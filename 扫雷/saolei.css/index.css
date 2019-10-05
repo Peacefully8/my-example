@@ -1,0 +1,103 @@
+*{
+    user-select: none;
+}
+.mine {
+    margin: 50px auto;
+}
+
+.level {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.level button {
+    padding: 5px 15px;
+    background-color: #02a4ad;
+    ;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.level button.active {
+    background-color: #00abff;
+}
+
+
+table{
+    border-spacing: 1px;
+    margin: 0 auto;
+    background-color: #929196;
+}
+
+td{
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border: 2px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+}
+td.zero{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+}
+td.one{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #0332fe;
+}
+td.two{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #019f02;
+}
+td.three{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #ff2600;
+}
+td.four{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #93208f;
+}
+td.five{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #ff7f29;
+}
+td.six{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #ff3fff;
+}
+td.seven{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #3fffbf;
+}
+td.eight{
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    color: #22ee0f;
+}
+
+.info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mines{
+    background: url("../imags/普通的雷.PNG") no-repeat left top/cover;
+}
+.minesClick{
+    background: url("../imags/红雷.PNG") no-repeat left top/cover;
+}
+.redFlag{
+    background: url("../imags/红旗.PNG") no-repeat left top/cover;
+}
