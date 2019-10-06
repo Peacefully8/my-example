@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>像素鸟游戏</title>
+    <style>
+        .game {
+            width: 800px;
+            height: 500px;
+            border: 2px solid #000;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .game .sky {
+            width: 200%;
+            height: 500px;
+            background: url("./imags/sky.jpg") left top/276px 500px; 
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .game .land{
+            width:200%;
+            height: 93px;
+            background: url("./imags/land.jpg") left bottom/84px 93px;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+        }
+        .game .bird{
+            width: 28px;
+            height: 20px;
+            position: absolute;
+            left: 150px;
+            top:150px;
+            background: url("imags/bird.png") no-repeat 0 0/cover;
+            background-position: 0px 1px;
+            /*
+                第一张：0 1px
+                第二张：0 -18px
+                第三张：0 -38px
+                背景位置            
+            */
+        }
+        .game .pipe{
+            position: absolute;
+
+        }
+        .game .pipe.up{
+            background: url("imags/pipe.png") no-repeat left bottom/cover;
+        }
+        .game .pipe.down{
+            background: url("imags/pipe.png") no-repeat left top/cover;
+        }
+        .game .over{
+            width: 100%;
+            height: 100%;
+            font-size: 36px;
+            line-height: 500px;
+            text-align: center;
+            opacity: .5;
+            background-color: #000;
+            position: absolute;
+            color: #fff;
+            z-index: 1;
+            display: none;
+        }
+        .game .count{
+            position: absolute;
+            z-index: 1;
+            left: 45%;
+            color: #fff;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="game">
+            <div class="sky"></div>
+            <div class="land"></div>
+            <div class="bird"></div>
+            <div class="over">Game Over</div>
+            <div class="count">得分：<span class="score">0</span></div>
+        </div>
+        <p>回车键开始/暂停，空格键跳跃。游戏结束，按回车键刷新游戏。</p>
+
+
+
+    <script src="bird.js"></script>
+</body>
+
+</html>
