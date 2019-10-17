@@ -1,0 +1,138 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    font-size: 16px;
+    background: #CDCDCD;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(47, 47, 47, .98);
+    font: 16px "Microsoft YaHei";
+}
+
+.layer {
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;  
+}
+
+.toDoList {
+    color: #fff;
+    float: left;
+    width: 100px;
+    line-height: 50px;
+    color: #DDD;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.add {
+    width: 60%;
+    height: 26px;
+    float: right;
+    margin-top: 12px;
+    text-indent: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.24), 0 1px 6px rgba(0, 0, 0, 0.45) inset;
+}
+
+.content{
+    height: 90px;
+    padding: 20px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2 span{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: inline-block;
+    padding: 0 5px;
+    height: 20px;
+    border-radius: 20px;
+    background: #E6E6FA;
+    line-height: 22px;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer{
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+li{
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 45px;
+    border-radius: 3px;
+    border-left: 5px solid #629A9C;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+}
+
+li input{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+li a{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    border-radius: 14px;
+    border: 6px double #FFF;
+    background: #CCC;
+    line-height: 14px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+li p{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+}
+
+ul li{
+    opacity: .5;
+}
+
+ol,ul{
+    margin-top: 10px;
+}
+.tip{
+    display: none;
+    color: #f00;
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+}

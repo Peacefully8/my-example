@@ -1,0 +1,30 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,form,fieldset,legend,img{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial;
+}
+fieldset,img{
+    border: 0;
+}
+ul,ol,li{
+    list-style: none;
+    
+}
+input{
+    padding-top: 0;
+    padding-bottom: 0;
+    bottom: none;
+    border:none;
+}
+input:focus{
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: #3c3c3c;
+}
+button{
+    border: none;
+}
